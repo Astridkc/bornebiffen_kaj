@@ -5,39 +5,100 @@
 @import "tailwindcss-animated";
 @import "tailwindcss-intersect";
 
-@font-face {
-  font-family: 'Honk';
-  src: url('/fonts/Honk-Regular-VariableFont_MORF,SHLN.ttf') format('truetype');
-}
 
 @font-face {
-  font-family: 'Quicksand';
-  src: url('/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Domine';
-  src: url('/fonts/Domine-Regular.ttf') format('truetype');
+  font-family: 'Gluten';
+  src: url('/fonts/Gluten-Regular.ttf') format('truetype');
 }
 
 @theme {
   /* Her tilføjes theme variable // tokens */
 
   /*Farver */
-  --color-primary-400: #00E4F5;
-  --color-primary-500: #006269;
-  --color-primary-600: #006D75;
-  --color-secondary-400: #F5E400;
-  --color-secondary-500: #F5A600;
-  --color-secondary-600: #F57A00;
+  --color-primary-pink: #F6E9EE;
+  --color-primary-red: #F3C7C7;
+  --color-primary-green: #DAECDE;
+    --color-primary-yellow: #F8E5C5;
+  --color-primary-blue: #D2DDE7;
+  --color-primary-purple: #554657;
+  --color-primary-beige: #FFFDF4;
 
   /*Typografi */
-  --font-display: 'Honk', monospace;
-  --font-sans: 'Quicksand', sans-serif;
-  --font-serif: 'Domine', serif;
+  --font-main: 'Gluten', sans-serif;
 }
 
 @layer base {
+  .Titel {
+  font-family: var(--font-main);
+}
+.H1 {
+  font-family: var(--font-main);
+}
+.H2 {
+  font-family: var(--font-main);
+}
+.H3 {
+  font-family: var(--font-main);
+}
+.H4 {
+  font-family: var(--font-main);
+}
+.H5 {
+  font-family: var(--font-main);
+}
+.Brødtekst {
+  font-family: var(--font-main);
+}
+
+.Titel-mobil {
+  font-family: var(--font-main);
+}
+.H1-mobil {
+  font-family: var(--font-main);
+}
+.H2-mobil {
+  font-family: var(--font-main);
+}
+.H3-mobil {
+  font-family: var(--font-main);
+}
+.H4-mobil {
+  font-family: var(--font-main);
+}
+.H5-mobil {
+  font-family: var(--font-main);
+}
+.Brødtekst-mobil {
+  font-family: var(--font-main);
+}
+
+/* Farver */
+
+.color-primary-pink {
+  color: var(--color-primary-pink);
+}
+.color-primary-red {
+  color: var(--color-primary-red);
+}
+.color-primary-green {
+  color: var(--color-primary-green);
+}
+.color-primary-yellow {
+  color: var(--color-primary-yellow);
+}
+.color-primary-blue {
+  color: var(--color-primary-blue);
+}
+.color-primary-purple {
+  color: var(--color-primary-purple);
+}
+.color-primary-beige {
+  color: var(--color-primary-beige);
+}
+
+.bg-primary-offwhite {
+  background-color: var(--primary-color-offwhite);
+}
 
 }
 
