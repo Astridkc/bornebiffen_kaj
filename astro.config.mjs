@@ -10,3 +10,7 @@ export default defineConfig({
   },
   integrations: [alpinejs()],
 });
+
+// @ts-check
+import { defineConfig } from "astro/config";
+import tailwindcss from "@tailwindcss/vite";
