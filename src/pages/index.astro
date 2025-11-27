@@ -7,14 +7,81 @@ import Heading from "../components/Heading.astro";
 import Text from "../components/Text.astro";
 import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
+import Greencard from "../components/Greencard.astro";
+import Yellowcard from "../components/Yellowcard.astro";
+import Regnbue from "../components/Regnbue.astro";
 ---
 
 <MainLayout title="Titel">
   <main class="bg-[var(--color-primary-beige)]">
     <div>
-      <img class="md:pl-38 md:pr-38 md:pb-3" src="public/hero_art_1.png" alt="heroart" />
+      <img class="md:pl-38 md:pr-38 md:pb-1" src="public/heroimage.png" alt="heroart" />
     </div>
 
+    <section>
+      <!-- Categories Row -->
+      <div class="w-full flex justify-center py-10 pt-0">
+        <div class="flex flex-row gap-3 md:gap-3 lg:gap-4">
+          <!-- Santa Hat -->
+          <a href="#santahat" class="transition-transform duration-200 hover:scale-110 cursor-pointer">
+            <img src="/santahat.png" alt="Santa Hat" class="w-24 h-24 md:w-32 md:h-32 lg:w-52 lg:h-52 object-contain drop-shadow" />
+          </a>
+
+          <!-- Flowers -->
+          <a href="#flowers" class="transition-transform duration-200 hover:scale-110 cursor-pointer">
+            <img src="/flowers.png" alt="Flowers" class="w-24 h-24 md:w-32 md:h-32 lg:w-52 lg:h-52 object-contain drop-shadow" />
+          </a>
+
+          <!-- Butterflies -->
+          <a href="#butterflies" class="transition-transform duration-200 hover:scale-110 cursor-pointer">
+            <img src="/butterflies.png" alt="Butterflies" class="w-24 h-24 md:w-32 md:h-32 lg:w-52 lg:h-52 object-contain drop-shadow" />
+          </a>
+
+          <!-- Night -->
+          <a href="#night" class="transition-transform duration-200 hover:scale-110 cursor-pointer">
+            <img src="/night.png" alt="Night" class="w-24 h-24 md:w-32 md:h-32 lg:w-52 lg:h-52 object-contain drop-shadow" />
+          </a>
+
+          <!-- Sun -->
+          <a href="#sun" class="transition-transform duration-200 hover:scale-110 cursor-pointer">
+            <img src="/sun.png" alt="Sun" class="w-24 h-24 md:w-32 md:h-32 lg:w-52 lg:h-52 object-contain drop-shadow" />
+          </a>
+        </div>
+      </div>
+    </section>
+
     <Card />
+    <Regnbue />
+    <Greencard />
+
+    <section class="w-full md:pl-38 md:pr-38 py-16 pt-20 px-6">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
+        <!-- LEFT SIDE IMAGE -->
+        <div class="flex-1 flex justify-center md:justify-start">
+          <img src="/app.png" alt="App Preview" class="w-full max-w-md" />
+        </div>
+
+        <!-- RIGHT SIDE TEXT + BUTTON -->
+        <div class="flex-1 text-center md:text-center">
+          <!-- HEADING (H2 desktop, H4 mobile) -->
+          <Heading size="h1"> Download vores Nye app! </Heading>
+
+          <!-- BLURB TEXT -->
+          <div class="pt-9">
+            <Text> Download vores nye app og tag Børnebiffen med dig hvor som helst! Få adgang til alle dine yndlingsprogrammer, sjove film og spændende serier, når som helst, hvor som helst. </Text>
+          </div>
+
+          <button class="mt-8 px-8 py-3 rounded-full text-lg cursor-pointer font-main border-2
+         transition-all duration-200 ease-out
+         text-[var(--color-primary-purple)]
+         border-[var(--color-primary-purple)]
+         bg-[var(--color-primary-red)]
+         hover:bg-[var(--color-primary-pink)]
+         hover:scale-105"> Tryk her og kom i gang! </button>
+        </div>
+      </div>
+    </section>
+
+    <Yellowcard />
   </main>
 </MainLayout>
