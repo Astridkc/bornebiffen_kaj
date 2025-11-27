@@ -7,4 +7,84 @@ import Heading from "../components/Heading.astro";
 import Text from "../components/Text.astro";
 import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
+import Footer from "../components/Footer.astro";
 ---
+
+<MainLayout title="Singleview">
+<section class="bg-[#D1E7EA] grid md:grid-cols-2 gap-10 items-center py-6 md:py-10">
+    
+    <div class="flex flex-col gap-4 pl-6 md:pl-10">
+
+      <Heading size="h1">
+        Cirkeline:<br /> Månen er en gul ost
+      </Heading>
+
+      
+      <div class="flex gap-3 mt-1">
+        <img src="../tilladt_for_alle.png" alt="Tilladt for alle" class="h-6 md:h-8 w-auto" />
+        <img src="../mus.png" alt="Mus" class="h-6 md:h-8 w-auto" />
+        <img src="../alfer.png" alt="Alfer" class="h-6 md:h-8 w-auto" />
+      </div>
+
+      <Text>
+        Cirkeline er en lille rund pige, der bor i en tændstikæske på tegnerens bord.
+        Musene har bygget en rumraket, der skal hente den store gule ost, månen, ned.
+        Frederik og Cirkeline lander imidlertid på jorden midt i et stort museødegilde,
+        så de alligevel får et stort stykke ost med hjem.
+      </Text>
+
+      <Text>
+        Instruktør: Jannik Hastrup (Danmark, 1970)
+      </Text>
+
+      <div class="flex items-center gap-50 mt-2">
+      <Heading size="h5">13 min</Heading>
+      <img
+         src="../heart.png"
+         alt="Like"
+         class="h-8 w-8 md:h-10 md:w-10 cursor-pointer"
+         />
+       </div>
+
+    </div>
+
+    
+    <div class="relative w-full h-screen">
+      <img
+        src="../snowman.png"
+        alt="Cirkeline illustration"
+        class="absolute inset-0 w-full h-full object-cover rounded-xl"
+
+      />
+
+      
+      <img
+        src="../play.png"
+        alt="Play"
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+               h-26 w-26 md:h-32 md:w-32 cursor-pointer"
+      />
+    </div>
+  </section>
+
+
+
+<section> 
+    <Heading size="h2" class="mt-2">Mer Cirkeline</Heading>
+    <div>
+        <img src="/public/rainbow.svg" alt="" class="w-280">
+    </div>
+</section>
+<Card />
+
+<section> 
+    <Heading size="h2" class="mt-2">Minder om</Heading>
+    <div>
+        <img src="/public/rainbow.svg" alt="" class="w-280">
+    </div>
+</section>
+<Card />
+
+<Footer />
+
+</MainLayout>
