@@ -7,4 +7,64 @@ import Heading from "../components/Heading.astro";
 import Text from "../components/Text.astro";
 import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
+import Greencard from "../components/Greencard.astro";
+import Yellowcard from "../components/Yellowcard.astro";
 ---
+
+<MainLayout>
+    <section>
+        <div class="justify-self-center md:w-200 relative">
+            <img src="/public/listview.png" alt="Liste View" />
+        </div>
+        <div>
+            <label class="input absolute left-1/2 transform -translate-x-1/2 mt-4 flex flex-row items-center gap-2 px-4 py-2 border border-[var(--color-primary-purple)] rounded-full bg-white focus-within:ring-2 focus-within:ring-blue-500 md:top-68 top-47">
+                <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                    </g>
+                </svg>
+                <input type="search" required class="H5" placeholder="Søg..." />
+            </label>
+        </div>
+    </section>
+    <section class="flex flex-cols-2 pt-6 justify-self-center">
+        <div class="dropdown p-4">
+            <img src="/public/filter.svg" alt="filter icon" tabindex="0" role="button" class="cursor-pointer md:w-10 md:pt-4" />
+
+            <ul tabindex="-1" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                <li><a>A-Z</a></li>
+                <li><a>Jul</a></li>
+                <li><a>Sommer</a></li>
+                <li><a>Natur</a></li>
+                <li><a>Godmorgen</a></li>
+                <li><a>Godnat</a></li>
+            </ul>
+        </div>
+        <div>
+            <img src="/public/rainbow.svg" alt="" class="w-280" />
+        </div>
+    </section>
+    <section class="md:pl-25 md:pr-25">
+        <div class="py-4">
+            <Card />
+        </div>
+        <div class="py-4">
+            <Greencard />
+        </div>
+        <div class="py-4">
+            <Yellowcard />
+        </div>
+    </section>
+    <section class="md:pl-25 md:pr-25">
+        <div class="py-4">
+            <Card />
+        </div>
+        <div class="py-4">
+            <Greencard />
+        </div>
+        <div class="py-4">
+            <Yellowcard />
+        </div>
+    </section>
+</MainLayout>
