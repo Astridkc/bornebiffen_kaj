@@ -1,0 +1,19 @@
+---
+import Text from "./Text.astro";
+import Heading from "./Heading.astro";
+---
+
+<!-- Rainbow + Heading (always in one row, responsive) -->
+<section class="w-full px-4 py-8">
+  <div class="max-w-7xl mx-auto pr-5 pl-5">
+    <div class="flex items-center justify-between gap-4">
+      <!-- Heading (responsive sizes) -->
+      <Heading size="h3" class="text-[var(--color-primary-purple)] leading-tight"> Anbefalinger </Heading>
+
+      <!-- Rainbow image: flexible and will shrink to fit on small screens -->
+      <div class="min-w-0 flex-1 flex justify-end">
+        <img src="/rainbow.svg" alt="Rainbow divider" class="w-full max-w-[600px] sm:max-w-[700px] md:max-w-[800px] object-contain" />
+      </div>
+    </div>
+  </div>
+</section>
