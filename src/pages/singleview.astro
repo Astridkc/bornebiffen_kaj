@@ -68,23 +68,30 @@ import Footer from "../components/Footer.astro";
   </section>
 
 
+      <section class="w-full px-4 py-8">
+        <div class="max-w-7xl mx-auto pr-5 pl-5">
+          <div class="flex items-center justify-between gap-4">
+            <Heading size="h3" class="text-[var(--color-primary-purple)] leading-tight"> Mer Cirkeline </Heading>
+            <div class="min-w-0 flex-1 flex justify-end">
+              <img src="/rainbow.svg" alt="Rainbow divider" class="w-full max-w-[600px] sm:max-w-[700px] md:max-w-[800px] object-contain" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section> 
-    <Heading size="h2" class="mt-2">Mer Cirkeline</Heading>
-    <div>
-        <img src="/public/rainbow.svg" alt="" class="w-280">
-    </div>
-</section>
-<Card />
+      <div class="py-4"><Card /></div>
 
-<section> 
-    <Heading size="h2" class="mt-2">Minder om</Heading>
-    <div>
-        <img src="/public/rainbow.svg" alt="" class="w-280">
-    </div>
-</section>
-<Card />
+      <section class="w-full px-4 py-8">
+        <div class="max-w-7xl mx-auto pr-5 pl-5">
+          <div class="flex items-center justify-between gap-4">
+            <Heading size="h3" class="text-[var(--color-primary-purple)] leading-tight"> Minder om </Heading>
+            <div class="min-w-0 flex-1 flex justify-end">
+              <img src="/rainbow.svg" alt="Rainbow divider" class="w-full max-w-[600px] sm:max-w-[700px] md:max-w-[800px] object-contain" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-<Footer />
+      <div class="py-4"><Card /></div>
 
 </MainLayout>
