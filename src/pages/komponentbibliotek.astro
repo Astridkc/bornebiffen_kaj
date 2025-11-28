@@ -10,57 +10,55 @@ import Card from "../components/Card.astro";
 ---
 
 <MainLayout title="Titel">
-    <main class="container mx-auto p-4">
-        <Heading htmlheading="h1" size="large">Komponentbibliotek</Heading>
-        <Text stylingclasses="italic">Her kan du finde alle de komponenter, der er brugt i dette projekt.</Text>
-        <hr class="my-4" />
-        <!-- start på typografi -->
-        <section>
-            <Heading htmlheading="h2" size="medium">Typografi & ovesrkrifter</Heading>
-            <Text>Her kan du finde alle de komponenter, der er brugt i dette projekt.</Text>
-            <Heading htmlheading="h1" size="large">h1 - large - sans</Heading>
-            <Heading htmlheading="h2" size="medium">h2 - medium - sans</Heading>
-            <Heading htmlheading="h3" size="small">h3 - small - sans</Heading>
-            <Heading htmlheading="h1" size="large" font="serif">h1 - large - serif</Heading>
-            <Heading htmlheading="h2" size="medium" font="serif">h2 - medium - serif</Heading>
-            <Heading htmlheading="h3" size="small" font="serif">h3 - small - serif</Heading>
-            <Heading htmlheading="h3" size="large" font="display">h3 - large - display</Heading>
-            <Text teksttype="brødtekst">
-                Her er en sektion brødtekst: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolorem doloremque commodi eaque quisquam quasi recusandae veniam. Corporis totam <Link href="#">Default link: </Link> reiciendis quibusdam ratione iure aut, numquam tenetur voluptatem exercitationem sequi enim!
-            </Text>
-            <Text teksttype="konsultativ"> Her en sektion konsultativ tekst: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolorem doloremque commodi eaque quisquam quasi recusandae veniam. Corporis totam reiciendis quibusdam ratione iure aut, numquam tenetur voluptatem exercitationem sequi enim! </Text>
-            <Text teksttype="brødtekst" stylingclasses="italic">
-                Her er en sektion brødtekst med ekstra css: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolorem doloremque commodi eaque quisquam quasi recusandae veniam. Corporis totam <Link href="#">Default link: </Link> reiciendis quibusdam ratione iure aut, numquam tenetur voluptatem exercitationem sequi enim!
-            </Text>
-        </section>
-        <!-- slut på typografi -->
-        <hr class="my-4" />
-        <!-- Link komponent instanser -->
-        <section>
-            <Heading htmlheading="h2" size="medium">Links</Heading>
-            <Text teksttype="brødtekst"><Link href="#">Default link: </Link>Default linket er en del af en tekst, og burde gerne fungere som et <Link href="#">link</Link> i en paragraf.</Text>
-            <Text><Link href="#" variant="primary">Link variant: primary</Link></Text>
-            <Text><Link href="#" variant="primary" size="small">Link variant: primary size small</Link></Text>
-            <Text><Link href="#" variant="primary" size="medium">Link variant: primary size medium</Link></Text>
-            <Text><Link href="#" variant="primary" size="large">Link variant: primary size large</Link></Text>
-            <Text><Link href="#" variant="secondary" size="small">Link variant: secondary size small</Link></Text>
-            <Text><Link href="#" variant="secondary" size="medium">Link variant: secondary size medium</Link></Text>
-            <Text><Link href="#" variant="secondary" size="large">Link variant: secondary size large</Link></Text>
-        </section>
-        <!-- Slut på Link komponent instanser -->
-        <hr class="my-4" />
-        <!-- Buttons komponent instanser -->
-        <section>
-            <Heading htmlheading="h2" size="medium">Buttons</Heading>
-            <Text><Button>Default knap</Button></Text>
-            <Text><Button variant="primary">Button variant: primary</Button></Text>
-            <Text><Button variant="primary" size="small">Button variant: primary size small</Button></Text>
-            <Text><Button variant="primary" size="medium">Button variant: primary size medium</Button></Text>
-            <Text><Button variant="primary" size="large">Button variant: primary size large</Button></Text>
-            <Text><Button variant="secondary" size="small">Button variant: secondary size small</Button></Text>
-            <Text><Button variant="secondary" size="medium">Button variant: secondary size medium</Button></Text>
-            <Text><Button variant="secondary" size="large">Variant: secondary size large</Button></Text>
-        </section>
-        <!-- Slut på Buttons komponent instanser -->
-    </main>
+  <main class="container mx-auto p-4">
+    <Heading htmlheading="h1" size="h1">Komponentbibliotek</Heading>
+    <Text stylingclasses="italic">Her kan du finde alle de komponenter, der er brugt i dette projekt.</Text>
+    <hr class="my-4" />
+    <!-- start på typografi -->
+    <section class="pb-7">
+      <Heading htmlheading="h2" size="medium">Typografi & ovesrkrifter</Heading>
+      <Text>Her kan du finde alle de komponenter, der er brugt i dette projekt.</Text>
+      <Heading htmlheading="h1" size="h1">h1 - sans serif</Heading>
+      <Heading htmlheading="h2" size="h2">h2 - sans serif</Heading>
+      <Heading htmlheading="h3" size="h3">h3 - sans serif</Heading>
+      <Heading htmlheading="h4" size="h4">h4 - sans serif</Heading>
+      <Heading htmlheading="h5" size="h5">h5 - sans serif</Heading>
+      <Text teksttype="brødtekst"> Her er en sektion brødtekst: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolorem doloremque commodi eaque quisquam quasi recusandae veniam. Corporis totam reiciendis quibusdam ratione iure aut, numquam tenetur voluptatem exercitationem sequi enim! </Text>
+    </section>
+    <!-- slut på typografi -->
+    <hr class="my-4 pb-7" />
+
+    <section>
+      <Heading htmlheading="h1" size="h1">Buttons</Heading>
+      <button class="mt-8 px-8 py-3 rounded-full text-lg cursor-pointer font-main border-2
+         transition-all duration-200 ease-out
+         text-[var(--color-primary-purple)]
+         border-[var(--color-primary-purple)]
+         bg-[var(--color-primary-red)]
+         hover:bg-[var(--color-primary-pink)]
+         hover:scale-105"> Tryk her og kom i gang! </button>
+
+      <div class="pt-7">
+        <button class="w-16 h-16 rounded-full flex items-center justify-center
+             bg-[var(--color-primary-red)]
+             border-4 border-[var(--color-primary-purple)]
+             hover:bg-[var(--color-primary-pink)]
+             transition duration-200">
+          <img src="/public/profile_icon.svg" alt="profile icon" class="w-8 h-8 object-contain" />
+        </button>
+      </div>
+
+      <div class="pt-7">
+        <a href="../pages/liste.astro" class="w-16 h-16 rounded-full flex items-center justify-center
+             bg-[var(--color-primary-red)]
+             border-4 border-[var(--color-primary-purple)]
+             hover:bg-[var(--color-primary-pink)]
+             transition duration-200">
+          <img src="/public/listview_icon.svg" alt="list view icon" class="w-8 h-8 object-contain" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Slut på Buttons komponent instanser -->
+  </main>
 </MainLayout>
